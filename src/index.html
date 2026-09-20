@@ -1,0 +1,177 @@
+<!--{"title":"EdFund — Find Scholarships, Grants, Student Loans & College Savings","desc":"EdFund is the free education funding hub: search scholarships and grants worldwide, compare student loan options, use college cost calculators, and enter our $1,000 no-essay scholarship.","priority":"1.0"}-->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">The education funding hub</span>
+      <h1>Find the money for your education — <span class="hl">without the guesswork.</span></h1>
+      <p class="lead">Scholarships, grants, student loans and savings strategies in one free place. Answer 3 questions and get a personalized funding plan.</p>
+      <div class="flex mt2">
+        <a class="btn btn-primary btn-lg" href="get-funded.html">Get my funding plan →</a>
+        <a class="btn btn-ghost btn-lg" href="scholarships.html">Browse scholarships</a>
+      </div>
+      <div class="hero-badges">
+        <span class="pill">✅ 100% free for students</span><span class="pill">🔒 No credit check</span><span class="pill">🌍 USA · Canada · UK · Global</span><span class="pill">🏆 $1,000 monthly drawing</span>
+      </div>
+    </div>
+    <div class="form-card" id="funding-quiz" data-wizard>
+      <form data-form="Home Funding Finder" data-thanks="quiz-thanks">
+        <div class="flex" style="justify-content:space-between"><b>Funding Finder</b><span class="step-label" data-step-label></span></div>
+        <div class="progress"><i></i></div>
+        <div class="step">
+          <h3>Who are you?</h3>
+          <div class="choice-grid" data-autonext>
+            <label class="choice"><input type="radio" name="I am" value="Student" required><span>🎓 Student</span></label>
+            <label class="choice"><input type="radio" name="I am" value="Parent"><span>👪 Parent</span></label>
+            <label class="choice"><input type="radio" name="I am" value="Graduate / Refinancing"><span>💼 Graduate / refinancing</span></label>
+            <label class="choice"><input type="radio" name="I am" value="International student"><span>✈️ International student</span></label>
+          </div>
+        </div>
+        <div class="step">
+          <h3>What level of study?</h3>
+          <p class="small muted" id="quiz-hint"></p>
+          <div class="choice-grid" data-autonext>
+            <label class="choice"><input type="radio" name="Level" value="High School" required><span>High school</span></label>
+            <label class="choice"><input type="radio" name="Level" value="Undergraduate"><span>Undergraduate</span></label>
+            <label class="choice"><input type="radio" name="Level" value="Graduate"><span>Graduate / MBA</span></label>
+            <label class="choice"><input type="radio" name="Level" value="Trade / Vocational"><span>Trade / vocational</span></label>
+          </div>
+          <button class="btn btn-ghost btn-sm" data-prev>← Back</button>
+        </div>
+        <div class="step">
+          <h3>Where do you want your matches sent?</h3>
+          <div class="row2">
+            <div class="field"><label for="q-name">First name</label><input id="q-name" name="First name" required autocomplete="given-name"></div>
+            <div class="field"><label for="q-country">Country</label><select id="q-country" name="Country" required><option value="">Select</option><option>United States</option><option>Canada</option><option>United Kingdom</option><option>India</option><option>Australia</option><option>Other</option></select></div>
+          </div>
+          <div class="field"><label for="q-email">Email</label><input id="q-email" type="email" name="Email" required autocomplete="email" placeholder="you@example.com"></div>
+          <label class="check"><input type="checkbox" name="Consent" value="Yes" required> Send me my matches and scholarship alerts. I can unsubscribe anytime.</label>
+          <div class="wizard-nav mt2"><button class="btn btn-ghost" data-prev>← Back</button><button class="btn btn-primary" type="submit">Show my plan →</button></div>
+          <div class="trust-line">🔒 We never sell your email. No credit check.</div>
+        </div>
+      </form>
+      <div id="quiz-thanks" class="hide">
+        <h3>🎉 Your plan is on its way!</h3>
+        <p class="muted">Check your inbox in the next few minutes. Meanwhile, start here:</p>
+        <ul class="list-check"><li><a href="scholarships.html">Browse scholarships that match your level</a></li><li><a href="giveaway.html">Enter the $1,000 no-essay drawing</a></li><li><a href="calculators.html#calc-gap">Calculate your funding gap</a></li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-sm">
+  <div class="container stats">
+    <div class="stat reveal"><b data-count="1.6" data-prefix="$" data-suffix="T+" data-dec="1">$1.6T+</b><span class="small muted">U.S. federal student loan debt outstanding</span></div>
+    <div class="stat reveal"><b data-count="7395" data-prefix="$">$7,395</b><span class="small muted">Max federal Pell Grant per year — money you don't repay</span></div>
+    <div class="stat reveal"><b data-count="6.52" data-suffix="%" data-dec="2">6.52%</b><span class="small muted">2026–27 federal undergrad loan rate (fixed)</span></div>
+    <div class="stat reveal"><b data-sch-total>40+</b><span class="small muted">Scholarships &amp; grants in the EdFund directory — growing weekly</span></div>
+  </div>
+  <p class="container small muted center mt2">Sources: U.S. Department of Education / Federal Student Aid. See <a href="student-loans.html#rates">rates</a>.</p>
+</section>
+
+<div class="ad-slot" data-slot="header"></div>
+
+<section class="bg-alt">
+  <div class="container">
+    <div class="center"><span class="eyebrow">Pick your path</span><h2>Funding built around you</h2><p class="lead">Every situation needs a different mix of free money, smart borrowing and saving.</p></div>
+    <div class="grid g3 mt3">
+      <a class="card hover reveal" href="scholarships.html?level=High%20School"><div class="icon">🎓</div><h3>High school students</h3><p class="muted">Big national scholarships, no-essay awards and how to max out your FAFSA.</p><b>Find scholarships →</b></a>
+      <a class="card hover reveal" href="scholarships.html?level=Undergraduate"><div class="icon">📚</div><h3>College students</h3><p class="muted">Renewable awards, federal grants and awards for your major.</p><b>See college awards →</b></a>
+      <a class="card hover reveal" href="calculators.html#calc-save"><div class="icon">👪</div><h3>Parents</h3><p class="muted">529 savings targets, Parent PLUS vs. private loans, cost planning.</p><b>Plan &amp; save →</b></a>
+      <a class="card hover reveal" href="student-loans.html#refinance"><div class="icon">💼</div><h3>Graduates &amp; borrowers</h3><p class="muted">Refinance, repayment plans and paying loans off faster.</p><b>Lower my payments →</b></a>
+      <a class="card hover reveal" href="scholarships.html?cat=Study%20Abroad"><div class="icon">✈️</div><h3>International students</h3><p class="muted">Fully funded awards: Chevening, Fulbright, Erasmus Mundus, DAAD and more.</p><b>Study abroad funding →</b></a>
+      <a class="card hover reveal" href="sponsor.html"><div class="icon">🏛️</div><h3>Schools &amp; sponsors</h3><p class="muted">Fund a named scholarship or reach motivated students and families.</p><b>Partner with us →</b></a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="results-bar"><div><span class="eyebrow">Featured opportunities</span><h2 class="mb0">Scholarships worth applying for</h2></div><a class="btn btn-ghost" href="scholarships.html">View all →</a></div>
+    <div class="grid g3" id="featured-sch"></div>
+  </div>
+</section>
+
+<section class="bg-navy">
+  <div class="container split">
+    <div>
+      <span class="eyebrow" style="color:var(--gold)">Monthly giveaway · <span data-month></span></span>
+      <h2>Win a $1,000 scholarship. No essay. 30 seconds.</h2>
+      <p class="lead">One winner every month, drawn at random. Refer friends for +5 bonus entries each. No purchase necessary.</p>
+      <div class="countdown mt2" data-countdown></div>
+      <div class="flex mt3"><a class="btn btn-gold btn-lg" href="giveaway.html">Enter free now →</a><a class="btn btn-white" href="giveaway.html#rules">Official rules</a></div>
+    </div>
+    <div class="grid g2">
+      <div class="card"><div class="icon">⏱️</div><h3>30-second entry</h3><p class="muted mb0">Name, email, grad year — that's it.</p></div>
+      <div class="card"><div class="icon">🔁</div><h3>Every month</h3><p class="muted mb0">A new drawing, a new chance to win.</p></div>
+      <div class="card"><div class="icon">👯</div><h3>Bonus entries</h3><p class="muted mb0">+5 entries for every friend who joins.</p></div>
+      <div class="card"><div class="icon">💸</div><h3>Paid to your school</h3><p class="muted mb0">Or to you, for education costs.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="center"><span class="eyebrow">Free tools</span><h2>Know your numbers in 60 seconds</h2></div>
+    <div class="grid g4 mt3">
+      <a class="card hover reveal" href="calculators.html#calc-loan"><div class="icon">🧮</div><h3>Loan payment</h3><p class="muted small mb0">Monthly payment &amp; total interest.</p></a>
+      <a class="card hover reveal" href="calculators.html#calc-save"><div class="icon">🐖</div><h3>529 savings goal</h3><p class="muted small mb0">How much to save each month.</p></a>
+      <a class="card hover reveal" href="calculators.html#calc-gap"><div class="icon">📉</div><h3>Funding gap</h3><p class="muted small mb0">Cost minus aid = what's left.</p></a>
+      <a class="card hover reveal" href="calculators.html#calc-payoff"><div class="icon">🚀</div><h3>Payoff accelerator</h3><p class="muted small mb0">What extra payments save you.</p></a>
+    </div>
+  </div>
+</section>
+
+<div class="ad-slot" data-slot="inContent"></div>
+
+<section class="bg-alt">
+  <div class="container">
+    <div class="results-bar"><div><span class="eyebrow">Watch &amp; learn</span><h2 class="mb0">Funding explained in minutes</h2></div><a class="btn btn-ghost" data-yt-subscribe href="#">▶ Subscribe on YouTube</a></div>
+    <div class="grid g3" data-videos data-limit="3"></div>
+    <div class="center mt3"><a class="btn btn-primary" href="videos.html">More videos →</a></div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="center"><span class="eyebrow">How EdFund works</span><h2>From confused to funded in 3 steps</h2></div>
+    <div class="grid g3 mt3">
+      <div class="card reveal"><div class="step-num">1</div><h3>Tell us about you</h3><p class="muted mb0">A 60-second profile: level, country, field of study, needs.</p></div>
+      <div class="card reveal"><div class="step-num">2</div><h3>Get matched</h3><p class="muted mb0">Scholarships, grants and fair loan options that fit, plus deadlines.</p></div>
+      <div class="card reveal"><div class="step-num">3</div><h3>Apply &amp; win</h3><p class="muted mb0">Guides, videos and calculators help you apply smarter and borrow less.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-alt">
+  <div class="container">
+    <div class="results-bar"><div><span class="eyebrow">Guides</span><h2 class="mb0">Expert playbooks</h2></div><a class="btn btn-ghost" href="guides.html">All guides →</a></div>
+    <div class="grid g3">
+      <a class="card hover" href="guides/fafsa-guide.html"><span class="tag blue">FAFSA</span><h3>The complete FAFSA guide</h3><p class="muted small mb0">Unlock grants, work-study and low-rate federal loans.</p></a>
+      <a class="card hover" href="guides/how-to-win-scholarships.html"><span class="tag green">Scholarships</span><h3>How to win scholarships</h3><p class="muted small mb0">A repeatable system for finding and winning awards.</p></a>
+      <a class="card hover" href="guides/federal-vs-private-student-loans.html"><span class="tag gold">Loans</span><h3>Federal vs. private loans</h3><p class="muted small mb0">Which to borrow first and what to avoid.</p></a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cta-band">
+      <div><h2>Keep EdFund free for every student</h2><p class="mb0">Your donation funds monthly scholarship prizes, free tools, outreach to underserved schools, and the researchers who verify every listing.</p></div>
+      <div class="flex"><a class="btn btn-white btn-lg" href="donate.html">❤️ Donate</a><a class="btn btn-gold btn-lg" href="sponsor.html">Sponsor a scholarship</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-sm">
+  <div class="container" style="max-width:860px">
+    <div class="center"><span class="eyebrow">FAQ</span><h2>Questions students ask us</h2></div>
+    <div class="mt3">
+      <details><summary>Is EdFund really free?</summary><div>Yes. Students and families never pay. We're supported by advertising, partner referrals (clearly disclosed), sponsors and donations. See our <a href="disclosure.html">advertiser disclosure</a>.</div></details>
+      <details><summary>Is EdFund legit?</summary><div>Every listing links to the official provider so you apply directly at the source. We never ask for payment to apply, and we never sell your personal information.</div></details>
+      <details><summary>Will checking loan options affect my credit?</summary><div>No. Asking EdFund for loan options does not run a credit check. Lenders use a soft inquiry to show prequalified rates. A hard inquiry only happens if you choose to formally apply with a lender.</div></details>
+      <details><summary>How does the $1,000 giveaway work?</summary><div>Enter once per month in about 30 seconds. One winner is drawn at random after the month ends and notified by email. No purchase or essay is needed. See the <a href="giveaway.html#rules">official rules</a>.</div></details>
+      <details><summary>Can international students use EdFund?</summary><div>Yes. Our directory includes fully funded international programs in the UK, Europe, Asia and Australia, plus guidance on loans that don't need a U.S. cosigner.</div></details>
+    </div>
+  </div>
+</section>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is EdFund really free?","acceptedAnswer":{"@type":"Answer","text":"Yes. Students and families never pay. EdFund is supported by advertising, disclosed partner referrals, sponsors and donations."}},{"@type":"Question","name":"Will checking loan options affect my credit?","acceptedAnswer":{"@type":"Answer","text":"No. EdFund does not run credit checks. Lenders use a soft inquiry for prequalified rates; a hard inquiry only occurs if you formally apply."}},{"@type":"Question","name":"How does the $1,000 giveaway work?","acceptedAnswer":{"@type":"Answer","text":"Enter once per month in about 30 seconds. One random winner is drawn after month end. No purchase or essay needed."}}]}</script>

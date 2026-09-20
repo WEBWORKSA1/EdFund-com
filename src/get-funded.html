@@ -1,0 +1,110 @@
+<!--{"title":"Get Matched: Your Free Personalized Education Funding Plan | EdFund","desc":"Answer a few questions and get a free, personalized funding plan: scholarships, grants, loan and refinance options, and savings strategies matched to you.","crumb":"Get Funded","priority":"0.9","bodyattr":" data-no-exit"}-->
+<section class="hero">
+  <div class="container hero-grid" style="align-items:start">
+    <div>
+      <div class="breadcrumb"><a href="index.html">Home</a> › Get matched</div>
+      <span class="eyebrow">Free funding match</span>
+      <h1>Your personal funding plan in <span class="hl">2 minutes</span></h1>
+      <p class="lead">Tell us where you are. We'll send you the scholarships, grants, loan options and next steps that fit you, and we'll never sell your data.</p>
+      <div class="grid g2 mt3 hide-mobile">
+        <div class="card"><b>🎯 Matched to you</b><p class="small muted mb0">Level, country, major and need.</p></div>
+        <div class="card"><b>⏰ Deadline alerts</b><p class="small muted mb0">Reminders before awards close.</p></div>
+        <div class="card"><b>🔒 Private &amp; free</b><p class="small muted mb0">No credit check. No fees.</p></div>
+        <div class="card"><b>🏆 Bonus entry</b><p class="small muted mb0">Auto-entered in the $1,000 drawing.</p></div>
+      </div>
+      <div class="callout mt3 hide-mobile"><b>Are you a school, lender, or brand?</b> Choose "School / Sponsor / Partner" in step 1 to reach motivated students, fund a named scholarship, or advertise.</div>
+    </div>
+    <div class="form-card" data-wizard id="funding-quiz">
+      <form data-form="Funding Match (lead)" data-thanks="gf-thanks">
+        <div class="flex" style="justify-content:space-between"><b>Funding Match</b><span class="step-label" data-step-label></span></div>
+        <div class="progress"><i></i></div>
+
+        <div class="step">
+          <h3>1. Which best describes you?</h3>
+          <div class="choice-grid" data-autonext>
+            <label class="choice"><input type="radio" name="I am" value="Student" required><span>🎓 Student</span></label>
+            <label class="choice"><input type="radio" name="I am" value="Parent"><span>👪 Parent / guardian</span></label>
+            <label class="choice"><input type="radio" name="I am" value="Graduate / Refinancing"><span>💼 Graduate / refinancing</span></label>
+            <label class="choice"><input type="radio" name="I am" value="International student"><span>✈️ International student</span></label>
+            <label class="choice" style="grid-column:1/-1"><input type="radio" name="I am" value="School / Sponsor"><span>🏛️ School / sponsor / partner</span></label>
+          </div>
+        </div>
+
+        <div class="step">
+          <h3>2. What do you need most?</h3>
+          <p class="small muted" id="quiz-hint"></p>
+          <div class="choice-grid" data-show-if="I am=Student|Parent|International student|Graduate / Refinancing">
+            <label class="choice"><input type="checkbox" name="Needs" value="Scholarships"><span>🏅 Scholarships</span></label>
+            <label class="choice"><input type="checkbox" name="Needs" value="Grants"><span>🏛️ Grants</span></label>
+            <label class="choice"><input type="checkbox" name="Needs" value="Student loan"><span>💳 Student loan</span></label>
+            <label class="choice"><input type="checkbox" name="Needs" value="Refinance"><span>🔁 Refinance</span></label>
+            <label class="choice"><input type="checkbox" name="Needs" value="529 / saving"><span>🐖 Saving / 529</span></label>
+            <label class="choice"><input type="checkbox" name="Needs" value="FAFSA help"><span>📝 FAFSA help</span></label>
+          </div>
+          <div class="hide" data-show-if="I am=School / Sponsor">
+            <div class="field"><label for="gf-org">Organization</label><input id="gf-org" name="Organization" required></div>
+            <div class="field"><label for="gf-int">Interested in</label><select id="gf-int" name="Partner interest" required><option value="">Select</option><option>Sponsor a named scholarship</option><option>Advertise to students/parents</option><option>Student recruitment leads</option><option>Lending / affiliate partnership</option><option>Content / video collaboration</option><option>Acquire EdFund.com</option></select></div>
+            <div class="field"><label for="gf-bud">Budget</label><select id="gf-bud" name="Budget"><option>Under $1,000</option><option>$1,000–$5,000</option><option>$5,000–$25,000</option><option>$25,000+</option></select></div>
+          </div>
+          <div class="wizard-nav"><button class="btn btn-ghost" data-prev>← Back</button><button class="btn btn-primary" data-next>Continue →</button></div>
+        </div>
+
+        <div class="step">
+          <h3>3. Your studies</h3>
+          <div class="row2">
+            <div class="field"><label for="gf-lvl">Level</label><select id="gf-lvl" name="Level"><option value="">Select</option><option>High school</option><option>Undergraduate</option><option>Graduate / MBA</option><option>Professional (law/med)</option><option>Trade / vocational</option><option>N/A</option></select></div>
+            <div class="field"><label for="gf-yr">Start / grad year</label><select id="gf-yr" name="Year"><option value="">Select</option><option>2026</option><option>2027</option><option>2028</option><option>2029</option><option>2030+</option></select></div>
+          </div>
+          <div class="row2">
+            <div class="field"><label for="gf-maj">Field of study</label><input id="gf-maj" name="Major" placeholder="e.g. Computer science"></div>
+            <div class="field"><label for="gf-gpa">GPA (approx.)</label><select id="gf-gpa" name="GPA"><option value="">Select</option><option>3.7+</option><option>3.3–3.69</option><option>3.0–3.29</option><option>2.5–2.99</option><option>Below 2.5</option><option>N/A</option></select></div>
+          </div>
+          <div class="field"><label for="gf-cost">Estimated yearly cost you need to cover</label><select id="gf-cost" name="Funding needed"><option value="">Select</option><option>Under $5,000</option><option>$5,000–$15,000</option><option>$15,000–$30,000</option><option>$30,000–$60,000</option><option>$60,000+</option></select></div>
+          <div class="wizard-nav"><button class="btn btn-ghost" data-prev>← Back</button><button class="btn btn-primary" data-next>Continue →</button></div>
+        </div>
+
+        <div class="step">
+          <h3>4. Where are you?</h3>
+          <div class="row2">
+            <div class="field"><label for="gf-c">Country</label><select id="gf-c" name="Country" required><option value="">Select</option><option>United States</option><option>Canada</option><option>United Kingdom</option><option>India</option><option>Australia</option><option>Nigeria</option><option>Pakistan</option><option>Philippines</option><option>Other</option></select></div>
+            <div class="field"><label for="gf-st">State / province</label><input id="gf-st" name="State"></div>
+          </div>
+          <div class="field"><label for="gf-dest">Where do you want to study?</label><select id="gf-dest" name="Study destination"><option>Same country</option><option>USA</option><option>Canada</option><option>UK</option><option>Europe</option><option>Australia</option><option>Asia</option><option>Undecided</option></select></div>
+          <div class="wizard-nav"><button class="btn btn-ghost" data-prev>← Back</button><button class="btn btn-primary" data-next>Continue →</button></div>
+        </div>
+
+        <div class="step">
+          <h3>5. Where should we send your plan?</h3>
+          <div class="row2">
+            <div class="field"><label for="gf-n">Full name</label><input id="gf-n" name="Name" required autocomplete="name"></div>
+            <div class="field"><label for="gf-e">Email</label><input id="gf-e" type="email" name="Email" required autocomplete="email"></div>
+          </div>
+          <div class="field"><label for="gf-p">Phone / WhatsApp (optional, for faster help)</label><input id="gf-p" type="tel" name="Phone" autocomplete="tel"></div>
+          <div class="field"><label for="gf-msg">Anything else? (optional)</label><textarea id="gf-msg" name="Message" rows="3" style="min-height:80px"></textarea></div>
+          <label class="check"><input type="checkbox" name="Consent" value="Yes" required> Send me my plan and funding alerts. I agree to the <a href="privacy.html">privacy policy</a> and the <a href="giveaway.html#rules">giveaway rules</a>.</label>
+          <label class="check mt2"><input type="checkbox" name="Partner offers" value="Yes"> Optional: let vetted schools and lending partners send me relevant offers.</label>
+          <div class="wizard-nav mt2"><button class="btn btn-ghost" data-prev>← Back</button><button class="btn btn-green btn-lg" type="submit">Get my free plan →</button></div>
+          <div class="trust-line">🔒 No credit check · No fees · Unsubscribe anytime</div>
+        </div>
+      </form>
+      <div id="gf-thanks" class="hide">
+        <h3>🎉 You're matched!</h3>
+        <p class="muted">Your personalized plan will reach your inbox shortly. You're also entered in this month's $1,000 drawing.</p>
+        <ol>
+          <li><a href="scholarships.html">Save 5 scholarships</a> to your list today</li>
+          <li><a href="guides/fafsa-guide.html">File your FAFSA</a> (U.S. students)</li>
+          <li><a href="giveaway.html">Share your giveaway link</a> for +5 bonus entries per friend</li>
+        </ol>
+        <a class="btn btn-primary" href="scholarships.html">Start browsing →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-alt section-sm">
+  <div class="container grid g3">
+    <div class="card"><h3>🔍 What happens next?</h3><p class="muted mb0">We review your profile and email you a funding plan: matching scholarships, grants you likely qualify for, and loan or refinance options if you asked for them.</p></div>
+    <div class="card"><h3>🛡️ Your data</h3><p class="muted mb0">We don't sell your personal information. Partner offers are opt-in only. <a href="privacy.html">Privacy policy</a>.</p></div>
+    <div class="card"><h3>💬 Need a human?</h3><p class="muted mb0">Questions about your situation? <a href="contact.html">Contact our team</a>. We reply within 1–2 business days.</p></div>
+  </div>
+</section>
