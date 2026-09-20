@@ -1,0 +1,71 @@
+<!--{"title":"Scholarship & Grant Search — Free Directory | EdFund","desc":"Search scholarships and grants for high school, college and graduate students in the USA, Canada, UK, Europe, Asia and Australia. Filter by amount, level, category and no-essay.","nav":"scholarships","crumb":"Scholarships","priority":"0.9"}-->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> › Scholarships</div>
+    <h1>Scholarship &amp; grant search</h1>
+    <p class="lead">Browse <b data-sch-total></b> hand-picked scholarships and grants, from no-essay awards to fully funded international programs. Every listing links to the official source.</p>
+  </div>
+</section>
+<section style="padding-top:20px">
+  <div class="container">
+    <div class="card">
+      <div class="filters">
+        <div><label for="f-q">Search</label><input id="f-q" type="search" placeholder="e.g. STEM, Canada, Fulbright…"></div>
+        <div><label for="f-country">Country</label><select id="f-country"><option value="">All</option></select></div>
+        <div><label for="f-level">Level</label><select id="f-level"><option value="">All</option><option>High School</option><option>Undergraduate</option><option>Graduate</option></select></div>
+        <div><label for="f-cat">Category</label><select id="f-cat"><option value="">All</option></select></div>
+        <div><label for="f-sort">Sort</label><select id="f-sort"><option value="high">Highest amount</option><option value="low">Lowest amount</option><option value="az">A–Z</option></select></div>
+      </div>
+      <div class="flex mt2">
+        <label class="check" style="margin:0"><input type="checkbox" id="f-ne"> No-essay / easy apply only</label>
+        <label class="check" style="margin:0"><input type="checkbox" id="f-saved"> <span>My saved list (<span data-saved-count>0</span>)</span></label>
+      </div>
+    </div>
+    <div class="results-bar"><b><span id="sch-count">0</span> results</b><span class="small muted">Amounts and deadlines are typical. Always confirm on the official site.</span></div>
+    <div class="grid g3" id="sch-grid" aria-live="polite"></div>
+  </div>
+</section>
+
+<section class="bg-alt">
+  <div class="container split">
+    <div>
+      <span class="eyebrow">Never miss a deadline</span>
+      <h2>Get new scholarships in your inbox every week</h2>
+      <p class="lead">Tell us what you study and we'll email new matches and deadline reminders. It's free, and you can unsubscribe with one click.</p>
+      <ul class="list-check"><li>New awards added every week</li><li>Deadline reminders 14 and 3 days out</li><li>Automatic entry into the monthly $1,000 drawing</li></ul>
+    </div>
+    <form class="form-card" data-form="Scholarship alerts" data-success="Done! Your first scholarship alert is on its way.">
+      <div class="row2">
+        <div class="field"><label for="sa-n">First name</label><input id="sa-n" name="First name" required></div>
+        <div class="field"><label for="sa-e">Email</label><input id="sa-e" type="email" name="Email" required></div>
+      </div>
+      <div class="row2">
+        <div class="field"><label for="sa-l">Level</label><select id="sa-l" name="Level" required><option value="">Select</option><option>High school</option><option>Undergraduate</option><option>Graduate</option><option>Trade / vocational</option></select></div>
+        <div class="field"><label for="sa-g">Grad year</label><select id="sa-g" name="Grad year" required><option value="">Select</option><option>2027</option><option>2028</option><option>2029</option><option>2030</option><option>2031+</option><option>Already graduated</option></select></div>
+      </div>
+      <div class="row2">
+        <div class="field"><label for="sa-m">Field of study</label><input id="sa-m" name="Major" placeholder="e.g. Nursing"></div>
+        <div class="field"><label for="sa-c">Country</label><input id="sa-c" name="Country" required placeholder="e.g. USA"></div>
+      </div>
+      <label class="check"><input type="checkbox" name="Consent" value="Yes" required> Email me scholarship matches and enter me in the monthly drawing (<a href="giveaway.html#rules">rules</a>).</label>
+      <button class="btn btn-primary btn-block mt2" type="submit">Start my alerts</button>
+    </form>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="center"><span class="eyebrow">Browse by category</span><h2>Popular scholarship categories</h2></div>
+    <div class="grid g4 mt3">
+      <a class="card hover" href="scholarships.html?cat=No-Essay"><h3>✍️ No-essay</h3><p class="muted small mb0">Quick-apply awards and drawings.</p></a>
+      <a class="card hover" href="scholarships.html?cat=STEM"><h3>🔬 STEM</h3><p class="muted small mb0">Science, tech, engineering &amp; math.</p></a>
+      <a class="card hover" href="scholarships.html?cat=Need-Based"><h3>🤝 Need-based</h3><p class="muted small mb0">Awards for students with financial need.</p></a>
+      <a class="card hover" href="scholarships.html?cat=Study%20Abroad"><h3>✈️ Study abroad</h3><p class="muted small mb0">Fully funded international programs.</p></a>
+      <a class="card hover" href="scholarships.html?cat=Government%20Grant"><h3>🏛️ Government grants</h3><p class="muted small mb0">Pell, SEOG, TEACH and national schemes.</p></a>
+      <a class="card hover" href="scholarships.html?cat=Minority"><h3>🌎 Minority students</h3><p class="muted small mb0">HSF, UNCF, Ron Brown and more.</p></a>
+      <a class="card hover" href="scholarships.html?cat=Merit%20%26%20Leadership"><h3>🏅 Merit &amp; leadership</h3><p class="muted small mb0">Coca-Cola, Elks, Loran, Rhodes.</p></a>
+      <a class="card hover" href="scholarships.html?cat=Women"><h3>👩‍🎓 Women</h3><p class="muted small mb0">Fellowships and grants for women.</p></a>
+    </div>
+    <p class="center mt3 muted">Run a scholarship? <a href="sponsor.html">List or sponsor it on EdFund →</a></p>
+  </div>
+</section>
