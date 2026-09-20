@@ -1,0 +1,27 @@
+<!--{"title":"Contact EdFund","desc":"Contact EdFund for student questions, partnerships, advertising, press, contests or domain inquiries. We reply within 1–2 business days.","crumb":"Contact","priority":"0.6"}-->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> › Contact</div>
+    <h1>Contact us</h1>
+    <p class="lead">Questions, partnerships, press or a domain inquiry: send us a message and a real person will reply within 1–2 business days.</p>
+  </div>
+</section>
+<section style="padding-top:16px">
+  <div class="container split" style="align-items:start">
+    <form class="form-card" data-form="Contact" data-success="Message sent! We'll reply within 1–2 business days.">
+      <div class="row2"><div class="field"><label for="ct-n">Name</label><input id="ct-n" name="Name" required autocomplete="name"></div><div class="field"><label for="ct-e">Email</label><input id="ct-e" type="email" name="Email" required autocomplete="email"></div></div>
+      <div class="field"><label for="ct-t">Topic</label><select id="ct-t" name="Topic" required><option value="">Select</option><option>Student question</option><option>Parent question</option><option>Partnership</option><option>Advertising</option><option>Sponsor a scholarship</option><option>Contest</option><option>Press / media</option><option>Donation</option><option>Report an error</option><option>Domain / website inquiry</option></select></div>
+      <div class="field"><label for="ct-s">Subject</label><input id="ct-s" name="Subject" required></div>
+      <div class="field"><label for="ct-m">Message</label><textarea id="ct-m" name="Message" required></textarea></div>
+      <label class="check"><input type="checkbox" name="Consent" value="Yes" required> I agree to the <a href="privacy.html">privacy policy</a>.</label>
+      <button class="btn btn-primary btn-block mt2" type="submit">Send message</button>
+    </form>
+    <div class="grid" style="gap:16px">
+      <div class="card"><h3>🎓 Students &amp; parents</h3><p class="muted mb0">Most questions are answered in our <a href="faq.html">FAQ</a> and <a href="guides.html">guides</a>. For a personal plan, use <a href="get-funded.html">Get Matched</a>.</p></div>
+      <div class="card"><h3>🤝 Partners &amp; advertisers</h3><p class="muted mb0">See <a href="sponsor.html">sponsorship packages</a> or choose "Partnership" in the form.</p></div>
+      <div class="card"><h3>✉️ Prefer email?</h3><p class="muted">Click below to open your email app.</p><a class="btn btn-ghost" href="contact.html" data-mail="EdFund.com inquiry">Email EdFund</a></div>
+      <div class="card"><h3>🌐 Interested in this domain?</h3><p class="muted">EdFund.com may be available for acquisition or partnership.</p><a class="btn btn-gold" href="https://web.works/contact" target="_blank" rel="noopener">Contact the owner</a></div>
+    </div>
+  </div>
+</section>
+<script>(function(){var t=new URLSearchParams(location.search).get("topic"),s=document.getElementById("ct-t");if(t&&s){for(var i=0;i<s.options.length;i++)if(s.options[i].text===t)s.selectedIndex=i;}})();</script>

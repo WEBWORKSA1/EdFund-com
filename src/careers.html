@@ -1,0 +1,41 @@
+<!--{"title":"Careers & Campus Ambassadors — Join EdFund","desc":"Join EdFund as a scholarship researcher, content writer, video creator, growth marketer, developer or campus ambassador. Remote-first and mission-driven.","crumb":"Careers","priority":"0.6"}-->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> › Careers</div>
+    <h1>Help millions of students pay for their education</h1>
+    <p class="lead">We're a remote-first team building the most useful education funding hub on the internet. We hire for talent, not zip codes.</p>
+  </div>
+</section>
+<section style="padding-top:16px">
+  <div class="container">
+    <h2>Open roles</h2>
+    <div class="grid g2 mt2">
+      <div class="card hover"><span class="tag blue">Remote · Freelance</span><h3>Scholarship researcher</h3><p class="muted small">Find, verify and update scholarships and grants. Attention to detail is a must.</p><a class="btn btn-ghost btn-sm" href="#apply" data-role="Scholarship researcher">Apply</a></div>
+      <div class="card hover"><span class="tag blue">Remote · Freelance</span><h3>Personal finance &amp; education writer</h3><p class="muted small">Write SEO guides on FAFSA, loans and scholarships. Include writing samples when you apply.</p><a class="btn btn-ghost btn-sm" href="#apply" data-role="Content writer">Apply</a></div>
+      <div class="card hover"><span class="tag gold">Remote · Part-time</span><h3>YouTube video creator / editor</h3><p class="muted small">Script, shoot and edit short and long explainers. Experience with Shorts is a plus.</p><a class="btn btn-ghost btn-sm" href="#apply" data-role="Video creator">Apply</a></div>
+      <div class="card hover"><span class="tag gold">Remote · Contract</span><h3>Growth &amp; partnerships marketer</h3><p class="muted small">Sign up sponsors and schools, run campaigns and grow the newsletter.</p><a class="btn btn-ghost btn-sm" href="#apply" data-role="Growth marketer">Apply</a></div>
+      <div class="card hover"><span class="tag green">Remote · Contract</span><h3>Front-end developer</h3><p class="muted small">Build calculators, search and interactive tools with vanilla JS and static-site tooling.</p><a class="btn btn-ghost btn-sm" href="#apply" data-role="Front-end developer">Apply</a></div>
+      <div class="card hover" id="ambassadors"><span class="tag green">Campus · Flexible</span><h3>Campus ambassador</h3><p class="muted small">Share EdFund on campus, host FAFSA nights and earn rewards, a certificate and a reference letter.</p><a class="btn btn-ghost btn-sm" href="#apply" data-role="Campus ambassador">Apply</a></div>
+    </div>
+  </div>
+</section>
+<section class="bg-alt" id="apply">
+  <div class="container split">
+    <div>
+      <h2>Apply in 2 minutes</h2>
+      <p class="lead">Send us a link to your work. We review every application and reply to shortlisted candidates within 7 days.</p>
+      <ul class="list-check"><li>Remote-first, async-friendly</li><li>Paid per project or hourly</li><li>Real impact on students</li></ul>
+    </div>
+    <form class="form-card" data-form="Job application" data-success="Application received! We'll be in touch if there's a fit.">
+      <div class="row2"><div class="field"><label for="ca-n">Full name</label><input id="ca-n" name="Name" required></div><div class="field"><label for="ca-e">Email</label><input id="ca-e" type="email" name="Email" required></div></div>
+      <div class="row2">
+        <div class="field"><label for="ca-r">Role</label><select id="ca-r" name="Role" required><option value="">Select</option><option>Scholarship researcher</option><option>Content writer</option><option>Video creator</option><option>Growth marketer</option><option>Front-end developer</option><option>Campus ambassador</option><option>Other</option></select></div>
+        <div class="field"><label for="ca-l">Location / time zone</label><input id="ca-l" name="Location" required></div>
+      </div>
+      <div class="field"><label for="ca-p">Portfolio / LinkedIn / résumé link</label><input id="ca-p" type="url" name="Portfolio" required placeholder="https://"></div>
+      <div class="field"><label for="ca-m">Why you? (2–3 sentences)</label><textarea id="ca-m" name="Message" required></textarea></div>
+      <button class="btn btn-primary btn-block" type="submit">Submit application</button>
+    </form>
+  </div>
+</section>
+<script>document.addEventListener("click",function(e){var a=e.target.closest("[data-role]");if(!a)return;var s=document.getElementById("ca-r");if(s){for(var i=0;i<s.options.length;i++)if(s.options[i].text===a.getAttribute("data-role"))s.selectedIndex=i;}});</script>

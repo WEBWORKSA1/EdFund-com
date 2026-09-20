@@ -1,0 +1,85 @@
+<!--{"title":"Donate — Keep Education Funding Help Free | EdFund","desc":"Support EdFund with a one-time or monthly donation. Your gift funds scholarship prizes, free tools, outreach, marketing to underserved students and hiring researchers.","nav":"donate","crumb":"Donate","priority":"0.8"}-->
+<section class="hero">
+  <div class="container hero-grid donate-grid" style="align-items:start">
+    <div class="donate-intro">
+      <div class="breadcrumb"><a href="index.html">Home</a> › Donate</div>
+      <span class="eyebrow">Support EdFund</span>
+      <h1>Help one more student find the money for school</h1>
+      <p class="lead">EdFund is free for every student. Donations pay for monthly scholarship prizes, keep our tools running, reach students at under-resourced schools, and pay the people who verify every listing.</p>
+      <div class="card mt3 donate-alloc">
+        <h3>Where your money goes</h3>
+        <div class="alloc"><div class="lbl"><span>🏆 Scholarship prizes &amp; contests</span><span>40%</span></div><div class="meter"><i style="width:40%;background:var(--gold)"></i></div></div>
+        <div class="alloc"><div class="lbl"><span>🛠️ Free tools &amp; operations</span><span>20%</span></div><div class="meter"><i style="width:20%;background:var(--blue)"></i></div></div>
+        <div class="alloc"><div class="lbl"><span>📣 Promotion &amp; outreach to students</span><span>20%</span></div><div class="meter"><i style="width:20%;background:var(--emerald)"></i></div></div>
+        <div class="alloc"><div class="lbl"><span>👩‍💻 Hiring researchers &amp; creators</span><span>15%</span></div><div class="meter"><i style="width:15%;background:#8B5CF6"></i></div></div>
+        <div class="alloc"><div class="lbl"><span>🎥 Free video workshops</span><span>5%</span></div><div class="meter"><i style="width:5%;background:var(--rose)"></i></div></div>
+        <p class="small muted mb0">Target allocation. We'll publish actual totals in quarterly impact updates.</p>
+      </div>
+    </div>
+    <div class="form-card" data-donate>
+      <h3>Choose your gift</h3>
+      <div class="toggle" role="group" aria-label="Frequency"><button type="button" data-freq="monthly" aria-pressed="true">Monthly ❤️</button><button type="button" data-freq="once" aria-pressed="false">One-time</button></div>
+      <div class="amounts">
+        <button type="button" class="amt-btn" data-amt="10">$10</button><button type="button" class="amt-btn" data-amt="25" aria-pressed="true">$25</button><button type="button" class="amt-btn" data-amt="50">$50</button>
+        <button type="button" class="amt-btn" data-amt="100">$100</button><button type="button" class="amt-btn" data-amt="250">$250</button>
+        <div><label class="sr-only" for="d-custom">Custom amount</label><input id="d-custom" type="number" min="1" placeholder="Other $" style="height:100%;font-weight:700;text-align:center"></div>
+      </div>
+      <div class="callout"><b id="d-total">$25 / month</b><br><span class="small" id="d-impact"></span></div>
+      <div class="grid" style="gap:10px">
+        <button class="btn btn-green btn-lg btn-block" data-pay="stripe">💳 Donate by card</button>
+        <div class="grid g2" style="gap:10px">
+          <button class="btn btn-ghost btn-block" data-pay="paypal">PayPal</button>
+          <button class="btn btn-ghost btn-block" data-pay="buyMeACoffee">☕ Buy us a coffee</button>
+        </div>
+        <button class="btn btn-ghost btn-block" data-pay="githubSponsors">GitHub Sponsors</button>
+      </div>
+      <p class="small muted mt2 mb0">🔒 Payments are handled by secure third-party processors. EdFund never sees your card number.</p>
+      <form id="pledge" class="hide mt2" data-form="Donation pledge" data-success="Thank you! We'll email you a secure payment link within 1 business day.">
+        <hr style="border:0;border-top:1px solid var(--border);margin:18px 0">
+        <b>Send a pledge</b><p class="small muted">We'll reply with a secure payment link, or bank, check or corporate matching details.</p>
+        <input type="hidden" id="pledge-amount" name="Pledge amount">
+        <div class="row2"><div class="field"><label for="pl-n">Name</label><input id="pl-n" name="Name" required></div><div class="field"><label for="pl-e">Email</label><input id="pl-e" type="email" name="Email" required></div></div>
+        <div class="field"><label for="pl-m">Preferred method</label><select id="pl-m" name="Method"><option>Card link</option><option>PayPal</option><option>Bank transfer</option><option>Corporate match</option><option>Crypto</option></select></div>
+        <label class="check"><input type="checkbox" name="Show on donor wall" value="Yes"> List my name on the donor wall</label>
+        <button class="btn btn-primary btn-block mt2" type="submit">Send pledge</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="bg-alt">
+  <div class="container">
+    <div class="center"><span class="eyebrow">Your impact</span><h2>What your gift makes possible</h2></div>
+    <div class="grid g4 mt3">
+      <div class="card"><div class="price">$10</div><p class="muted small mb0">Keeps our free tools online for about 1,000 student visits.</p></div>
+      <div class="card"><div class="price">$25</div><p class="muted small mb0">Pays for an hour of scholarship research and verification.</p></div>
+      <div class="card"><div class="price">$100</div><p class="muted small mb0">Produces a free FAFSA or scholarship workshop video.</p></div>
+      <div class="card"><div class="price">$1,000</div><p class="muted small mb0">Funds a full month's scholarship for one student.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container split">
+    <div>
+      <span class="eyebrow">Bigger impact</span>
+      <h2>Corporate giving, matching &amp; named scholarships</h2>
+      <p class="lead">Fund a scholarship in your company's or family's name, match employee gifts, or underwrite a contest. We handle the promotion, applications and winner selection.</p>
+      <a class="btn btn-primary" href="sponsor.html">See sponsorship options →</a>
+    </div>
+    <div class="card">
+      <h3>Donor wall</h3>
+      <p class="muted">Donors who opt in are thanked here. Be the first name on the wall.</p>
+      <div class="flex"><span class="tag gold">Founding supporter spots open</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-sm">
+  <div class="container" style="max-width:860px">
+    <h2 class="center">Donation FAQ</h2>
+    <details><summary>Is my donation tax-deductible?</summary><div>EdFund is currently not a registered charity, so donations are not tax-deductible. If that changes, we'll update this page and issue receipts.</div></details>
+    <details><summary>Can I cancel a monthly donation?</summary><div>Yes, anytime. Use the link in your payment receipt, or <a href="contact.html">contact us</a> and we'll cancel it for you.</div></details>
+    <details><summary>How do I know the money is used well?</summary><div>We publish quarterly impact updates with prize payouts, tools shipped and students reached.</div></details>
+  </div>
+</section>

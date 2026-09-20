@@ -1,0 +1,116 @@
+<!--{"title":"Free College Cost & Student Loan Calculators | EdFund","desc":"Free student loan payment, 529 college savings, funding gap, loan payoff and borrowing affordability calculators. Instant results, no sign-up.","nav":"calculators","crumb":"Calculators","priority":"0.8"}-->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> › Calculators</div>
+    <h1>Education money calculators</h1>
+    <p class="lead">Instant answers with no sign-up. Change any number and the results update live.</p>
+  </div>
+</section>
+<section style="padding-top:16px">
+  <div class="container">
+    <div data-tabs>
+      <div class="tabs" role="tablist">
+        <button class="tab" role="tab" aria-controls="calc-loan">🧮 Loan payment</button>
+        <button class="tab" role="tab" aria-controls="calc-save">🐖 529 savings</button>
+        <button class="tab" role="tab" aria-controls="calc-gap">📉 Funding gap</button>
+        <button class="tab" role="tab" aria-controls="calc-payoff">🚀 Payoff accelerator</button>
+        <button class="tab" role="tab" aria-controls="calc-afford">⚖️ Affordability</button>
+      </div>
+
+      <div class="tabpanel" id="calc-loan" role="tabpanel">
+        <div class="calc" data-calc="loan">
+          <div class="card">
+            <div class="field"><label for="l-amt">Loan amount ($)</label><input id="l-amt" type="number" min="0" step="500" value="30000"></div>
+            <div class="field"><label for="l-rate">Interest rate (%)</label><input id="l-rate" type="number" min="0" step="0.01" value="6.52"></div>
+            <div class="field"><label for="l-years">Term (years)</label><input id="l-years" type="number" min="1" max="30" value="10"></div>
+            <p class="small muted mb0">Tip: 6.52% is the 2026–27 federal undergraduate rate.</p>
+          </div>
+          <div class="result">
+            <div class="small">Monthly payment</div><div class="big" id="l-out">—</div>
+            <div class="bar-chart" id="l-bar"></div><div class="small">Blue = principal · Gold = interest</div>
+            <dl><dt>Principal</dt><dd id="l-prin"></dd><dt>Total interest</dt><dd id="l-int"></dd><dt>Total repaid</dt><dd id="l-total"></dd></dl>
+            <a class="btn btn-gold btn-block" href="student-loans.html">Find a lower rate →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tabpanel" id="calc-save" role="tabpanel">
+        <div class="calc" data-calc="save">
+          <div class="card">
+            <div class="field"><label for="s-goal">College savings goal ($)</label><input id="s-goal" type="number" min="0" step="1000" value="100000"></div>
+            <div class="field"><label for="s-have">Already saved ($)</label><input id="s-have" type="number" min="0" step="500" value="5000"></div>
+            <div class="field"><label for="s-years">Years until college</label><input id="s-years" type="number" min="1" max="25" value="12"></div>
+            <div class="field"><label for="s-ret">Expected annual return (%)</label><input id="s-ret" type="number" min="0" max="15" step="0.5" value="6"></div>
+          </div>
+          <div class="result">
+            <div class="small">Save each month</div><div class="big" id="s-out">—</div>
+            <dl><dt>Growth of current savings</dt><dd id="s-fv"></dd><dt>Your total contributions</dt><dd id="s-contrib"></dd><dt>Investment growth on contributions</dt><dd id="s-growth"></dd></dl>
+            <a class="btn btn-gold btn-block" href="guides/529-college-savings-plans.html">How 529 plans work →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tabpanel" id="calc-gap" role="tabpanel">
+        <div class="calc" data-calc="gap">
+          <div class="card">
+            <b>Yearly cost of attendance</b>
+            <div class="row2 mt2"><div class="field"><label for="g-tuition">Tuition &amp; fees</label><input id="g-tuition" type="number" value="24000"></div><div class="field"><label for="g-housing">Housing &amp; food</label><input id="g-housing" type="number" value="13000"></div></div>
+            <div class="row2"><div class="field"><label for="g-books">Books &amp; supplies</label><input id="g-books" type="number" value="1200"></div><div class="field"><label for="g-other">Transport &amp; personal</label><input id="g-other" type="number" value="3000"></div></div>
+            <b>Money you have</b>
+            <div class="row2 mt2"><div class="field"><label for="g-grants">Grants</label><input id="g-grants" type="number" value="7395"></div><div class="field"><label for="g-sch">Scholarships</label><input id="g-sch" type="number" value="5000"></div></div>
+            <div class="row2"><div class="field"><label for="g-savings">Savings / family</label><input id="g-savings" type="number" value="8000"></div><div class="field"><label for="g-work">Work-study / job</label><input id="g-work" type="number" value="3000"></div></div>
+          </div>
+          <div class="result">
+            <div class="small">Your yearly funding gap</div><div class="big" id="g-out">—</div>
+            <dl><dt>Total cost</dt><dd id="g-cost"></dd><dt>Total resources</dt><dd id="g-aid"></dd></dl>
+            <p id="g-note" style="color:#D5DCF0"></p>
+            <a class="btn btn-gold btn-block" href="get-funded.html">Close my gap →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tabpanel" id="calc-payoff" role="tabpanel">
+        <div class="calc" data-calc="payoff">
+          <div class="card">
+            <div class="field"><label for="p-bal">Loan balance ($)</label><input id="p-bal" type="number" value="35000"></div>
+            <div class="field"><label for="p-rate">Interest rate (%)</label><input id="p-rate" type="number" step="0.01" value="7.5"></div>
+            <div class="field"><label for="p-years">Remaining term (years)</label><input id="p-years" type="number" value="10"></div>
+            <div class="field"><label for="p-extra">Extra payment per month ($)</label><input id="p-extra" type="number" value="150"></div>
+          </div>
+          <div class="result">
+            <div class="small">Debt-free in</div><div class="big" id="p-out">—</div>
+            <dl><dt>Standard payment</dt><dd id="p-base"></dd><dt>Interest saved</dt><dd id="p-save"></dd><dt>Time saved</dt><dd id="p-months"></dd></dl>
+            <a class="btn btn-gold btn-block" href="student-loans.html#refinance">Check refinance rates →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tabpanel" id="calc-afford" role="tabpanel">
+        <div class="calc" data-calc="afford">
+          <div class="card">
+            <div class="field"><label for="a-salary">Expected starting salary ($/yr)</label><input id="a-salary" type="number" value="55000"></div>
+            <div class="field"><label for="a-rate">Expected loan rate (%)</label><input id="a-rate" type="number" step="0.01" value="6.52"></div>
+            <div class="field"><label for="a-years">Repayment term (years)</label><input id="a-years" type="number" value="10"></div>
+            <p class="small muted mb0">Rule of thumb: keep total student debt at or below your expected first-year salary.</p>
+          </div>
+          <div class="result">
+            <div class="small">Maximum recommended total borrowing</div><div class="big" id="a-out">—</div>
+            <dl><dt>Monthly payment at that amount</dt><dd id="a-pay"></dd><dt>Share of gross income</dt><dd id="a-pct"></dd></dl>
+            <a class="btn btn-gold btn-block" href="scholarships.html">Borrow less: find scholarships →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="ad-slot" data-slot="inContent"></div>
+<section class="section-sm">
+  <div class="container split">
+    <div><h2>Want these numbers explained by a human?</h2><p class="lead">Send us your situation and we'll email a plain-English plan with scholarships and options to lower your costs.</p></div>
+    <form class="form-card" data-form="Calculator help request" data-success="Got it! We'll email you within 1–2 business days.">
+      <div class="row2"><div class="field"><label for="ch-n">Name</label><input id="ch-n" name="Name" required></div><div class="field"><label for="ch-e">Email</label><input id="ch-e" type="email" name="Email" required></div></div>
+      <div class="field"><label for="ch-m">What are you trying to figure out?</label><textarea id="ch-m" name="Message" required></textarea></div>
+      <button class="btn btn-primary btn-block" type="submit">Email me a plan</button>
+    </form>
+  </div>
+</section>
